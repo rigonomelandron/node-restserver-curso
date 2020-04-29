@@ -23,7 +23,7 @@ if ( process.env.NODE_ENV === 'dev'){
 }else {
 
 
-urlDB = 'mongodb+srv://cafe-user:k3vQwxl9A8bPAC1o@cluster0-svxzh.mongodb.net/cafe'
+urlDB = process.env.MONGO_URI;
 
 }
 process.env.URLDB = urlDB;
