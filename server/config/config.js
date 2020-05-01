@@ -9,8 +9,18 @@ process.env.PORT = process.env.PORT || 3000;
 // Entorno
 //==================
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
+process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
+//==================
+// Vencimiento del token
+//==================
+
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+//==================
+//Seed de autenticación
+//==================
+      // tendremos que implementar una variable de entorno en heroku desde la consola de comandos con  >heroku config:set SEED="Este-es-el-seed-de-produccion"(SEED es la variable)
+process.env.SEED = process.env.SEED || 'Este-es-el-seed-de-desarrollo'
 //==================
 // Base de datos
 //==================
